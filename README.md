@@ -7,9 +7,9 @@
 There are 9 emotions available: "neutral", "calm", "happy" "sad", "angry", "fear", "disgust", "ps" (pleasant surprise) and "boredom".
 ## Features
 ### Telegram
-integration with telegram: you can record your voice using telegram and the answer will deliver through it.
+integration with telegram: you can record your voice using telegram bot and the result of detected emotion will be sent by the bot; keeping in mind that the code must be running.
 ### Classifiers
-Here I use confusion matrix to choice which's the best classifier for my case.
+I used a Confusion Matrix to determine the best classifier.
 - MLPClassifier
 - GradientBoostingClassifier
 - SVC
@@ -48,7 +48,7 @@ This repository used 4 datasets (including this repo's custom dataset) which are
 ## Feature Extraction
 Feature extraction is the main part of the speech emotion recognition system. It is basically accomplished by changing the speech waveform to a form of parametric representation at a relatively lesser data rate.
 
-In this repository, we have used the most used features that are available in [librosa](https://github.com/librosa/librosa) library including:
+In this repository, we have used the most-used features that are available in [librosa](https://github.com/librosa/librosa) library, including:
 - [MFCC](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum)
 - SSC
 - Chroma 
